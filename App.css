@@ -1,0 +1,130 @@
+:root {
+  --primary:white;
+  --secondary:orange;
+}
+
+html,body {
+  margin: 0px;
+  padding: 0px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.App-container {
+  width:100%;
+  max-width: 560px;
+  height: 100vh;
+  background: gray;
+  margin: 0px auto;
+}
+
+.landing-page {
+  >.landing-header{
+    width: 100%;
+    height:calc(100vh/2);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  >.landing-body{
+    padding: 10px 20px;
+  }
+}
+.contactus-page-content {
+  padding: 10px 15px;
+}
+.card-slider-container {
+display: flex;
+align-items: center;
+flex-wrap: nowrap;
+overflow-x: scroll;
+>.card-wrapper {
+min-width: 80%;
+height:500px;
+padding: 10px;
+box-sizing: border-box;
+>.card {
+  position:relative;
+  width:100%;
+  height:100%;
+  border-radius: 10px;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  >.card-header{
+  height:50px;
+  padding: 10px 10px;
+  display: flex;
+  align-items: start;
+  }
+  >.card-body{
+  height:calc(100%-100px);
+  display: flex;
+  align-items: start;
+  padding: 10px 10px;
+  flex-direction: column;
+  justify-content: end;
+  }
+  >.card-footer{
+  height:50px;
+  }
+}
+}
+}
+.app-header {
+  
+    width:100%;
+    height:60px;
+    display:flex;
+    align-items:center;
+
+  >.prefix {
+    width: 80px;
+  }
+  >.content {
+    width:calc(100%-160px);
+  }
+  >.suffix {
+   width: 160px;
+  }
+}
